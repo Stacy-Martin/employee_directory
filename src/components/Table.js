@@ -11,7 +11,7 @@ import API from "../utils/API.js"
 import "./style.css";
 
 //map over tablerows depending on props.users ??
-// function Table (props) {  ????
+function Table (props) {
     
 const columns = [
     {
@@ -58,10 +58,10 @@ function App() {
         </Card>
         </div>
     );
-    }
+    }}
       
   const rootElement = document.getElementById("root");
 
   ReactDOM.render(<App />, rootElement);
 
-//   export default Table;
+  export default Table;
