@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# Employee Directory
+
+[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
+
+## Description
+Business managers are always short on time so any applications that can increase efficiency are a must!  This employee directory allows managers to view non-sensitive data and provides quick access to that information.  I have created this app while learning about React.  Please see React user information highlighted below. 
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
