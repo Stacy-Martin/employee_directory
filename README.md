@@ -9,14 +9,14 @@ Business managers are always short on time so any applications that can increase
   - [Employee Directory](#Employee_Directory)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
-  - [Installation and Useage](#installation)
+  - [Installation](#installation)
   - [License](#license)
   - [Contributions](#contributions)
   - [Questions](#questions)
   - [Preview](#preview)
 
 
-## Installation and Useage
+## Installation
 
 1. Getting Started with Create React App
 
