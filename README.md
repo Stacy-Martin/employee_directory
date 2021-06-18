@@ -5,12 +5,24 @@
 ## Description
 Business managers are always short on time so any applications that can increase efficiency are a must!  This employee directory allows managers to view non-sensitive data and provides quick access to that information.  I have created this app while learning about React.  Please see React user information highlighted below. 
 
+## Table of Contents
+  - [Employee Directory](#Employee_Directory)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation and Useage](#installation)
+  - [License](#license)
+  - [Contributions](#contributions)
+  - [Questions](#questions)
+  - [Preview](#preview)
 
-## Getting Started with Create React App
+
+## Installation and Useage
+
+1. Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+2. Available Scripts
 
 In the project directory, you can run:
 
@@ -47,32 +59,36 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+3. Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+4. Code Splitting
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+5. Analyzing the Bundle Size
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## License 
+This project is licensed under the [License: Unlicense](http://unlicense.org/) license.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contributions
+To contribute to this repository, fork it and submit a pull request for review.
 
-### Advanced Configuration
+## Questions
+* I am always grateful for feedback! Contact me at sbrown1031@gmail.com.
+* If you have questions feel free to contact me directly or create an issue. 
+* To see more of my work, check out GitHub:  [Stacy-Martin](https://github.com/Stacy-Martin).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Preview
 
-### Deployment
+![](XXXXXX)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Check out the deployed app here:   
+XXXXXXX
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thanks to my study buddies ;) teacher, and incredible TA (Katerina Poulos) for technical assistance - and many others for encouragement! 
