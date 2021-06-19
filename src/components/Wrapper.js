@@ -19,9 +19,12 @@ const [search, setSearch] = useState("");
 // GET USERS FUNCTION
 // first useEffect activates the callback function when component is initially rendered
 useEffect(() =>{
-API.fetchEmpData().then((res)=>{
-    console.log(res)
-    setUsers(res)
+API().then((res)=>{
+    res.json().then((data)=>{
+        console.log(data)
+        setUsers(data.results)
+    })
+
 })
 // has an empty dependency
 }, [])
@@ -35,12 +38,16 @@ useEffect(() =>{
 
 // FILTER FUNCTION
 useEffect(() =>{
+    console.log("FILTERING!")
+console.log(users.filter((user) =>{
 
+    return user.name.first
+}))
 }, [filtered])
 
 // SEARCH FUNCTION 
-const searchHandler = () => {
-    setSearch()
+const searchHandler = (event) => {
+    console.log()
 }
 
 // can only return one thing in a react app 
@@ -48,8 +55,7 @@ return (
   <div>
     <Header />
     <Search results={search} handleInputChange={searchHandler} />
-    {/* complete table line below... */}
-    <Table/>
+    <Table users={users}></Table>
   </div>
 );}
 

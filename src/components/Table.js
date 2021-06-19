@@ -1,7 +1,7 @@
 // using example from React data table sandbox
 
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect, useState } from "react";
+// import ReactDOM from "react-dom";
 import DataTable from "react-data-table-component";
 import Card from "@material-ui/core/Card";
 import SortIcon from "@material-ui/icons/ArrowDownward";
@@ -12,7 +12,13 @@ import "./style.css";
 
 //map over tablerows depending on props.users ??
 function Table (props) {
-    
+const [users, setUsers] = useState("");
+useEffect(()=>{
+console.log(props.users)
+let temp = props.users;
+temp = JSON.parse(JSON.stringify(temp));
+setUsers(temp)
+}, [props.users])
 const columns = [
     {
         name: "Picture",
@@ -40,28 +46,36 @@ const columns = [
     },
     ];
 
-function App() {
+
     return (
         <div className="App">
         <Card>
-            <DataTable
-            title="Employee Directory"
-            columns={columns}
-            // insert tableRows here ?? TableRows......
-            rows={TableRows}
-            data={API.fetchEmpData}
-            defaultSortFieldId={1}
-            sortIcon={<SortIcon />}
-            pagination
-            selectableRows
-            />
-        </Card>
-        </div>
+            <table>
+        <tr>
+            <th scope="col">
+                Image
+            </th>
+            <th scope="col">
+                Name
+            </th>
+            <th scope="col">
+                Email
+            </th>
+            <th scope="col">
+              Nationality
+            </th>
+            </tr>
+            {users ?          
+            users.map((user) =>{return <TableRows user={user}></TableRows>})
+             :
+            ( 
+          <></>
+                    
+            )}
+            </table>
+            </Card>
+            </div>
     );
-    }}
+    }
       
-  const rootElement = document.getElementById("root");
-
-  ReactDOM.render(<App />, rootElement);
-
   export default Table;
