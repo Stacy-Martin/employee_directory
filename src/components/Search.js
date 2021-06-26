@@ -1,21 +1,27 @@
 import React from "react";
 
-function Search({ search, setSearch }) {
+function Search({ setSearch }) {
+
+
+  let handleSearch = (e) =>{
+    let value  = e.target.value
+// console.log(e.target.value)
+setSearch(value)
+  }
+
   return (
-    <form className="bg-light justify-content-between">
-      <input
+
+    <>
+    <input
         className="form-inline empSearch"
         type="search"
         placeholder="Search"
         aria-label="Search"
-        // results, name or value here ??
-        results={search}
-        // on click ?? or what here ??
-        onChange={e => setSearch(e.target.value)}
+        onChange={handleSearch}
       />
-      <button className="btn btn-outline-success" type="submit">Search</button>
-      {/* button type supposed to be button or submit? */}
-    </form>
+ 
+    </>
+ 
   );
 }
 

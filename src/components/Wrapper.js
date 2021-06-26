@@ -12,7 +12,6 @@ function Wrapper (props) {
 
 //users, filteredUsers, isSorted 
 const [users, setUsers] = useState([]);
-const [isSorted, setIsSorted] = useState(false);
 const [filtered, setFiltered] = useState([]);
 const [search, setSearch] = useState("");
 
@@ -23,34 +22,41 @@ API().then((res)=>{
     res.json().then((data)=>{
         console.log(data)
         setUsers(data.results)
+        setFiltered(data.results)
     })
 
 })
 // has an empty dependency
 }, [])
 
-// SORT FUNCTION
-// this useEffect method will check if isSorted changes to execute the callback function here
-//if sorted, change the look of the table
-useEffect(() =>{
-
-}, [isSorted])
+ 
 
 // FILTER FUNCTION
-useEffect(() =>{
-    console.log("FILTERING!")
-console.log(users.filter((user) =>{
+// useEffect(() =>{
+//     console.log("FILTERING!")
+// console.log(users.filter((user) =>{
 
-    return user.name.first
-}))
-}, [filtered])
+//     return user.name.first
+// }))
+// }, [filtered])
 
 
 
 // SEARCH FUNCTION 
 const searchHandler = (searchString) => {
 
-console.log(searchString)
+// console.log(searchString)
+
+setSearch(searchString)
+
+let filtered = users.filter(({phone, email}) =>{
+  return  (  phone.includes(searchString) ||
+  email.includes(searchString))
+})
+
+console.log("filtered", filtered)
+
+setFiltered(filtered)
 
 
 }
@@ -67,8 +73,10 @@ console.log(searchString)
 return (
   <div>
     <Header />
-    <Search results={search} handleInputChange={searchHandler} />
-    <Table users={users}></Table>
+    <Search  setSearch={searchHandler} />
+    <Table users={filtered}></Table>
+
+
   </div>
 );}
 
