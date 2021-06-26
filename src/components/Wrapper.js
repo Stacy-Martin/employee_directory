@@ -71,7 +71,7 @@ setFiltered(filtered)
 
 // can only return one thing in a react app 
 return (
-  <div>
+  <div className="m-4">
     <Header />
     <Search  setSearch={searchHandler} />
     <Table users={filtered}></Table>

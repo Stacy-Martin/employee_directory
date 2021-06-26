@@ -32,10 +32,21 @@ function Table ({users}) {
 // setUsers(temp)
 // }, [props.users])
 const columns = [
+  {
+    dataField: 'picture',
+    text: 'Photo',
+
+    formatter:(cell, row) => <img src={row.picture.medium} />
+  ,
+style:{textAlign: "center"} ,
+headerStyle:{width:150}
+  },
+
     {
-        dataField: 'first',
+        dataField: 'name',
         text: 'Name',
-        sort: true
+        sort: false,
+        formatter:(cell, row) => `${row.name.first} ${row.name.last}`
       },
     {
     dataField: 'phone',
