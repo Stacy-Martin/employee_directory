@@ -86,9 +86,9 @@ To contribute to this repository, fork it and submit a pull request for review.
 
 ## Preview
 
-![](XXXXXX)
+![](/public/Screen%20Shot%202021-06-26%20at%205.44.16%20PM.png)
 
 Check out the deployed app here:   
-XXXXXXX
+https://stacy-martin.github.io/employee_directory/
 
 Thanks to my study buddies ;) teacher, and incredible TA (Katerina Poulos) for technical assistance - and many others for encouragement! 
