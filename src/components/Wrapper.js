@@ -45,10 +45,23 @@ console.log(users.filter((user) =>{
 }))
 }, [filtered])
 
+
+
 // SEARCH FUNCTION 
-const searchHandler = (event) => {
-    console.log()
+const searchHandler = (searchString) => {
+
+console.log(searchString)
+
+
 }
+//     console.log()
+//     // TODO: change EmployeeData to whatever I have it called 
+//     const stringifyArray = EmployeeData.map((item)=>{
+//         return JSON.stringify.item
+//     })
+//     const result = stringifyArray.filter(data => data.includes(searchString));
+//     setFiltered(result)
+// }
 
 // can only return one thing in a react app 
 return (
